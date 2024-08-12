@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050819542C69B0B800AFD9FF /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819532C69B0B800AFD9FF /* CostViewController.swift */; };
+		050819562C69B13500AFD9FF /* CostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819552C69B13500AFD9FF /* CostFormViewController.swift */; };
+		050819582C69B17100AFD9FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819572C69B17100AFD9FF /* MapViewController.swift */; };
 		055672102C6908D500B39E38 /* Cost+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720C2C6908D500B39E38 /* Cost+CoreDataClass.swift */; };
 		055672112C6908D500B39E38 /* Cost+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720D2C6908D500B39E38 /* Cost+CoreDataProperties.swift */; };
 		055672122C6908D500B39E38 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720E2C6908D500B39E38 /* Trip+CoreDataClass.swift */; };
@@ -25,6 +28,7 @@
 		05A4D0F22C6757D400274659 /* VoyageMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4D0F12C6757D400274659 /* VoyageMateTests.swift */; };
 		05A4D0FC2C6757D400274659 /* VoyageMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4D0FB2C6757D400274659 /* VoyageMateUITests.swift */; };
 		05A4D0FE2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4D0FD2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift */; };
+		05F4F96D2C698120004961C2 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F4F96C2C698120004961C2 /* TripDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050819532C69B0B800AFD9FF /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
+		050819552C69B13500AFD9FF /* CostFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostFormViewController.swift; sourceTree = "<group>"; };
+		050819572C69B17100AFD9FF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0556720C2C6908D500B39E38 /* Cost+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0556720D2C6908D500B39E38 /* Cost+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0556720E2C6908D500B39E38 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -67,6 +74,7 @@
 		05A4D0F72C6757D400274659 /* VoyageMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoyageMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A4D0FB2C6757D400274659 /* VoyageMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageMateUITests.swift; sourceTree = "<group>"; };
 		05A4D0FD2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05F4F96C2C698120004961C2 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,10 @@
 				0556721B2C69130800B39E38 /* TripViewController.swift */,
 				055672202C6920E700B39E38 /* TripFormViewController.swift */,
 				055672222C69732C00B39E38 /* HomeViewController.swift */,
+				05F4F96C2C698120004961C2 /* TripDetailsViewController.swift */,
+				050819532C69B0B800AFD9FF /* CostViewController.swift */,
+				050819552C69B13500AFD9FF /* CostFormViewController.swift */,
+				050819572C69B17100AFD9FF /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -312,6 +324,7 @@
 				0556721C2C69130800B39E38 /* TripViewController.swift in Sources */,
 				05A4D0DC2C6757D200274659 /* ViewController.swift in Sources */,
 				055672122C6908D500B39E38 /* Trip+CoreDataClass.swift in Sources */,
+				050819542C69B0B800AFD9FF /* CostViewController.swift in Sources */,
 				055672132C6908D500B39E38 /* Trip+CoreDataProperties.swift in Sources */,
 				0556721F2C691E6900B39E38 /* TripTableViewCell.swift in Sources */,
 				05A4D0E22C6757D200274659 /* VoyageMate.xcdatamodeld in Sources */,
@@ -319,8 +332,11 @@
 				055672212C6920E700B39E38 /* TripFormViewController.swift in Sources */,
 				05A4D0D82C6757D200274659 /* AppDelegate.swift in Sources */,
 				055672102C6908D500B39E38 /* Cost+CoreDataClass.swift in Sources */,
+				050819562C69B13500AFD9FF /* CostFormViewController.swift in Sources */,
+				05F4F96D2C698120004961C2 /* TripDetailsViewController.swift in Sources */,
 				05A4D0DA2C6757D200274659 /* SceneDelegate.swift in Sources */,
 				055672232C69732C00B39E38 /* HomeViewController.swift in Sources */,
+				050819582C69B17100AFD9FF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

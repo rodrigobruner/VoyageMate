@@ -51,7 +51,6 @@ class TripViewController: UIViewController {
 // MARK: SearchBar ---
 extension TripViewController:UISearchBarDelegate {
 
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             getAllTrip()
@@ -80,7 +79,23 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // Instancie o UITabBarController a partir do storyboard
+        if let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabTripDetail") as? UITabBarController {
+            
+            // Configure as view controllers do tab bar
+            if let viewControllers = tabBarController.viewControllers {
+                for viewController in viewControllers {
+                    if let tripDetailsVC = viewController as? TripDetailsViewController {
+                        tripDetailsVC.trip = self.models[indexPath.row]
+                    }
+                }
+            }
+            
+            // Navegue para o UITabBarController
+            self.navigationController?.pushViewController(tabBarController, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
