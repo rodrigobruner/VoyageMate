@@ -71,9 +71,9 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tripCell", for: indexPath) as! TripTableViewCell
         
-        cell.textLabel?.text = model.name
+        cell.set(trip: model)
         
         return cell
     }
@@ -81,10 +81,7 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        // Instancie o UITabBarController a partir do storyboard
         if let tabBarController = storyboard.instantiateViewController(withIdentifier: "TabTripDetail") as? UITabBarController {
-            
-            // Configure as view controllers do tab bar
             if let viewControllers = tabBarController.viewControllers {
                 for viewController in viewControllers {
                     if let tripDetailsVC = viewController as? TripDetailsViewController {
@@ -92,8 +89,6 @@ extension TripViewController: UITableViewDelegate, UITableViewDataSource{
                     }
                 }
             }
-            
-            // Navegue para o UITabBarController
             self.navigationController?.pushViewController(tabBarController, animated: true)
         }
     }

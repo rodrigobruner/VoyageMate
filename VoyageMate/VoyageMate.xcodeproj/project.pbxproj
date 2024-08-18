@@ -10,10 +10,6 @@
 		050819542C69B0B800AFD9FF /* CostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819532C69B0B800AFD9FF /* CostViewController.swift */; };
 		050819562C69B13500AFD9FF /* CostFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819552C69B13500AFD9FF /* CostFormViewController.swift */; };
 		050819582C69B17100AFD9FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050819572C69B17100AFD9FF /* MapViewController.swift */; };
-		055672102C6908D500B39E38 /* Cost+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720C2C6908D500B39E38 /* Cost+CoreDataClass.swift */; };
-		055672112C6908D500B39E38 /* Cost+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720D2C6908D500B39E38 /* Cost+CoreDataProperties.swift */; };
-		055672122C6908D500B39E38 /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720E2C6908D500B39E38 /* Trip+CoreDataClass.swift */; };
-		055672132C6908D500B39E38 /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556720F2C6908D500B39E38 /* Trip+CoreDataProperties.swift */; };
 		0556721C2C69130800B39E38 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556721B2C69130800B39E38 /* TripViewController.swift */; };
 		0556721F2C691E6900B39E38 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556721E2C691E6900B39E38 /* TripTableViewCell.swift */; };
 		055672212C6920E700B39E38 /* TripFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055672202C6920E700B39E38 /* TripFormViewController.swift */; };
@@ -29,6 +25,22 @@
 		05A4D0FC2C6757D400274659 /* VoyageMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4D0FB2C6757D400274659 /* VoyageMateUITests.swift */; };
 		05A4D0FE2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4D0FD2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift */; };
 		05F4F96D2C698120004961C2 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F4F96C2C698120004961C2 /* TripDetailsViewController.swift */; };
+		E73BE7082C6AA546000D6A9C /* Trip+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE7042C6AA546000D6A9C /* Trip+CoreDataClass.swift */; };
+		E73BE7092C6AA546000D6A9C /* Trip+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE7052C6AA546000D6A9C /* Trip+CoreDataProperties.swift */; };
+		E73BE70A2C6AA546000D6A9C /* Cost+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE7062C6AA546000D6A9C /* Cost+CoreDataClass.swift */; };
+		E73BE70B2C6AA546000D6A9C /* Cost+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE7072C6AA546000D6A9C /* Cost+CoreDataProperties.swift */; };
+		E73BE70D2C6AA950000D6A9C /* Trip+CoreDataExtend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE70C2C6AA950000D6A9C /* Trip+CoreDataExtend.swift */; };
+		E73BE7122C6AC845000D6A9C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73BE7112C6AC845000D6A9C /* TabBarViewController.swift */; };
+		E75304562C6FD11F00DCE20B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304552C6FD11F00DCE20B /* Weather.swift */; };
+		E75304592C6FD1AF00DCE20B /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304582C6FD1AF00DCE20B /* WeatherAPI.swift */; };
+		E753045B2C6FD3EA00DCE20B /* Settings.prod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753045A2C6FD3EA00DCE20B /* Settings.prod.swift */; };
+		E753045D2C6FD41300DCE20B /* Settings.dev.swift in Sources */ = {isa = PBXBuildFile; fileRef = E753045C2C6FD41300DCE20B /* Settings.dev.swift */; };
+		E75304612C6FDAAB00DCE20B /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304602C6FDAAB00DCE20B /* ForecastViewController.swift */; };
+		E75304632C6FF64C00DCE20B /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304622C6FF64C00DCE20B /* ForecastTableViewCell.swift */; };
+		E75304662C70FCA900DCE20B /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304652C70FCA900DCE20B /* TextArea.swift */; };
+		E75304682C7141A000DCE20B /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75304672C7141A000DCE20B /* AboutViewController.swift */; };
+		E75B0ED82C6FC381005D69CC /* CostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B0ED72C6FC381005D69CC /* CostTableViewCell.swift */; };
+		E76B8FFC2C6BEE1000D2ADB4 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76B8FFB2C6BEE1000D2ADB4 /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +64,6 @@
 		050819532C69B0B800AFD9FF /* CostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostViewController.swift; sourceTree = "<group>"; };
 		050819552C69B13500AFD9FF /* CostFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostFormViewController.swift; sourceTree = "<group>"; };
 		050819572C69B17100AFD9FF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		0556720C2C6908D500B39E38 /* Cost+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0556720D2C6908D500B39E38 /* Cost+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0556720E2C6908D500B39E38 /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0556720F2C6908D500B39E38 /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0556721B2C69130800B39E38 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		0556721E2C691E6900B39E38 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		055672202C6920E700B39E38 /* TripFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFormViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +83,22 @@
 		05A4D0FB2C6757D400274659 /* VoyageMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageMateUITests.swift; sourceTree = "<group>"; };
 		05A4D0FD2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoyageMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		05F4F96C2C698120004961C2 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
+		E73BE7042C6AA546000D6A9C /* Trip+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E73BE7052C6AA546000D6A9C /* Trip+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E73BE7062C6AA546000D6A9C /* Cost+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E73BE7072C6AA546000D6A9C /* Cost+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cost+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E73BE70C2C6AA950000D6A9C /* Trip+CoreDataExtend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Trip+CoreDataExtend.swift"; sourceTree = "<group>"; };
+		E73BE7112C6AC845000D6A9C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = VoyageMate/ViewController/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		E75304552C6FD11F00DCE20B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		E75304582C6FD1AF00DCE20B /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		E753045A2C6FD3EA00DCE20B /* Settings.prod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.prod.swift; sourceTree = "<group>"; };
+		E753045C2C6FD41300DCE20B /* Settings.dev.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.dev.swift; sourceTree = "<group>"; };
+		E75304602C6FDAAB00DCE20B /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		E75304622C6FF64C00DCE20B /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		E75304652C70FCA900DCE20B /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		E75304672C7141A000DCE20B /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E75B0ED72C6FC381005D69CC /* CostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostTableViewCell.swift; sourceTree = "<group>"; };
+		E76B8FFB2C6BEE1000D2ADB4 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +129,11 @@
 		055672142C6908FE00B39E38 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0556720C2C6908D500B39E38 /* Cost+CoreDataClass.swift */,
-				0556720D2C6908D500B39E38 /* Cost+CoreDataProperties.swift */,
-				0556720E2C6908D500B39E38 /* Trip+CoreDataClass.swift */,
-				0556720F2C6908D500B39E38 /* Trip+CoreDataProperties.swift */,
+				E73BE7042C6AA546000D6A9C /* Trip+CoreDataClass.swift */,
+				E73BE7052C6AA546000D6A9C /* Trip+CoreDataProperties.swift */,
+				E73BE7062C6AA546000D6A9C /* Cost+CoreDataClass.swift */,
+				E73BE7072C6AA546000D6A9C /* Cost+CoreDataProperties.swift */,
+				E73BE70C2C6AA950000D6A9C /* Trip+CoreDataExtend.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -116,6 +141,7 @@
 		055672152C6909CB00B39E38 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E73BE7112C6AC845000D6A9C /* TabBarViewController.swift */,
 				0556721B2C69130800B39E38 /* TripViewController.swift */,
 				055672202C6920E700B39E38 /* TripFormViewController.swift */,
 				055672222C69732C00B39E38 /* HomeViewController.swift */,
@@ -123,6 +149,8 @@
 				050819532C69B0B800AFD9FF /* CostViewController.swift */,
 				050819552C69B13500AFD9FF /* CostFormViewController.swift */,
 				050819572C69B17100AFD9FF /* MapViewController.swift */,
+				E75304602C6FDAAB00DCE20B /* ForecastViewController.swift */,
+				E75304672C7141A000DCE20B /* AboutViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -131,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				0556721E2C691E6900B39E38 /* TripTableViewCell.swift */,
+				E75B0ED72C6FC381005D69CC /* CostTableViewCell.swift */,
+				E75304622C6FF64C00DCE20B /* ForecastTableViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -158,9 +188,11 @@
 		05A4D0D62C6757D200274659 /* VoyageMate */ = {
 			isa = PBXGroup;
 			children = (
+				E75304642C70FC8700DCE20B /* UI */,
+				E75304572C6FD17D00DCE20B /* APIs */,
+				E73BE7102C6AC7CF000D6A9C /* Models */,
 				0556721D2C691E3D00B39E38 /* TableView */,
 				055672152C6909CB00B39E38 /* ViewController */,
-				055672142C6908FE00B39E38 /* CoreData */,
 				05A4D0D72C6757D200274659 /* AppDelegate.swift */,
 				05A4D0D92C6757D200274659 /* SceneDelegate.swift */,
 				05A4D0DB2C6757D200274659 /* ViewController.swift */,
@@ -169,6 +201,8 @@
 				05A4D0E52C6757D400274659 /* LaunchScreen.storyboard */,
 				05A4D0E82C6757D400274659 /* Info.plist */,
 				05A4D0E02C6757D200274659 /* VoyageMate.xcdatamodeld */,
+				E753045A2C6FD3EA00DCE20B /* Settings.prod.swift */,
+				E753045C2C6FD41300DCE20B /* Settings.dev.swift */,
 			);
 			path = VoyageMate;
 			sourceTree = "<group>";
@@ -188,6 +222,32 @@
 				05A4D0FD2C6757D400274659 /* VoyageMateUITestsLaunchTests.swift */,
 			);
 			path = VoyageMateUITests;
+			sourceTree = "<group>";
+		};
+		E73BE7102C6AC7CF000D6A9C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				055672142C6908FE00B39E38 /* CoreData */,
+				E76B8FFB2C6BEE1000D2ADB4 /* Landmark.swift */,
+				E75304552C6FD11F00DCE20B /* Weather.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E75304572C6FD17D00DCE20B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				E75304582C6FD1AF00DCE20B /* WeatherAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		E75304642C70FC8700DCE20B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E75304652C70FCA900DCE20B /* TextArea.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,21 +381,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73BE7092C6AA546000D6A9C /* Trip+CoreDataProperties.swift in Sources */,
+				E76B8FFC2C6BEE1000D2ADB4 /* Landmark.swift in Sources */,
+				E73BE70D2C6AA950000D6A9C /* Trip+CoreDataExtend.swift in Sources */,
 				0556721C2C69130800B39E38 /* TripViewController.swift in Sources */,
 				05A4D0DC2C6757D200274659 /* ViewController.swift in Sources */,
-				055672122C6908D500B39E38 /* Trip+CoreDataClass.swift in Sources */,
+				E73BE7122C6AC845000D6A9C /* TabBarViewController.swift in Sources */,
+				E75304632C6FF64C00DCE20B /* ForecastTableViewCell.swift in Sources */,
 				050819542C69B0B800AFD9FF /* CostViewController.swift in Sources */,
-				055672132C6908D500B39E38 /* Trip+CoreDataProperties.swift in Sources */,
 				0556721F2C691E6900B39E38 /* TripTableViewCell.swift in Sources */,
 				05A4D0E22C6757D200274659 /* VoyageMate.xcdatamodeld in Sources */,
-				055672112C6908D500B39E38 /* Cost+CoreDataProperties.swift in Sources */,
+				E75304682C7141A000DCE20B /* AboutViewController.swift in Sources */,
 				055672212C6920E700B39E38 /* TripFormViewController.swift in Sources */,
+				E75304612C6FDAAB00DCE20B /* ForecastViewController.swift in Sources */,
 				05A4D0D82C6757D200274659 /* AppDelegate.swift in Sources */,
-				055672102C6908D500B39E38 /* Cost+CoreDataClass.swift in Sources */,
+				E75304592C6FD1AF00DCE20B /* WeatherAPI.swift in Sources */,
+				E73BE70A2C6AA546000D6A9C /* Cost+CoreDataClass.swift in Sources */,
+				E753045B2C6FD3EA00DCE20B /* Settings.prod.swift in Sources */,
+				E75304662C70FCA900DCE20B /* TextArea.swift in Sources */,
+				E73BE7082C6AA546000D6A9C /* Trip+CoreDataClass.swift in Sources */,
+				E75304562C6FD11F00DCE20B /* Weather.swift in Sources */,
 				050819562C69B13500AFD9FF /* CostFormViewController.swift in Sources */,
 				05F4F96D2C698120004961C2 /* TripDetailsViewController.swift in Sources */,
+				E73BE70B2C6AA546000D6A9C /* Cost+CoreDataProperties.swift in Sources */,
+				E753045D2C6FD41300DCE20B /* Settings.dev.swift in Sources */,
 				05A4D0DA2C6757D200274659 /* SceneDelegate.swift in Sources */,
 				055672232C69732C00B39E38 /* HomeViewController.swift in Sources */,
+				E75B0ED82C6FC381005D69CC /* CostTableViewCell.swift in Sources */,
 				050819582C69B17100AFD9FF /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,11 +587,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoyageMate/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show nearby landmarks and provide navigation even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby landmarks and provide navigation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,9 +601,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.bruner.VoyageMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -542,11 +619,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VoyageMate/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show nearby landmarks and provide navigation even when the app is in the background.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show nearby landmarks and provide navigation.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,9 +633,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.bruner.VoyageMate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

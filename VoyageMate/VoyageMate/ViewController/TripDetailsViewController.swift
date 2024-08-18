@@ -9,7 +9,6 @@ import UIKit
 
 class TripDetailsViewController: UIViewController {
 
-    
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var destinationLabel: UILabel!
@@ -24,18 +23,27 @@ class TripDetailsViewController: UIViewController {
     
     @IBOutlet weak var deleteButton: UIButton!
     
+ 
     //Context for Core Data
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     var trip: Trip?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
         nameLabel.text = trip?.name
         
-        destinationLabel.text = trip?.destination
+        var destination = Constants.Destination.withoutDestination
+        if let dest = trip?.destination, !dest.isEmpty {
+            destination = (trip?.destination)!
+        }
+        destinationLabel.text = destination
         
+
         startLabel.text = formatDate(trip?.start)
         
         endLabel.text = formatDate(trip?.end)
@@ -44,9 +52,22 @@ class TripDetailsViewController: UIViewController {
         notesTextView.translatesAutoresizingMaskIntoConstraints = false
         notesTextView.isScrollEnabled = true
         notesTextView.showsVerticalScrollIndicator = true
-
+        
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let tabBar = tabBarController as! TabBarViewController
+        if tabBar.objTrip == nil && trip != nil {
+            tabBar.objTrip = trip
+        } else {
+            trip = tabBar.objTrip
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        let tabBar = tabBarController as! TabBarViewController
+        tabBar.objTrip = trip
+    }
     
     @IBAction func editTrip(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -58,6 +79,7 @@ class TripDetailsViewController: UIViewController {
     
     
     @IBAction func deleteTrip(_ sender: Any) {
+        
         let alert = UIAlertController(title: "Delete Trip", message: "Are you sure you want to delete this trip?", preferredStyle: .alert)
         let deleteAction = UIAlertAction(title: "Delete", style: .destructive) { _ in
             self.deleteTrip(trip: self.trip!)
@@ -76,6 +98,7 @@ class TripDetailsViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
+//        print(date)
         return formatter.string(from: date)
     }
     
