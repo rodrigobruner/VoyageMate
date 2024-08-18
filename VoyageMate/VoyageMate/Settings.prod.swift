@@ -11,7 +11,7 @@ class Constants{
     
     class WeatherAPI{
         // Create your API key on the openweathermap.org website
-        static let keyAPI = "721a2c19ff4023ffafd089406c3f0f71"
+        static let keyAPI = ""
         
         //options :
         //   - metric:  in Kelvin
